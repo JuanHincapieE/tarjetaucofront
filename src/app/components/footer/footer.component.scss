@@ -1,0 +1,11 @@
+@use '../../../style/global-style' as gs;
+
+.footer-style {
+    background-color: gs.$green-color;
+}
+
+.text-style-comp {
+    @include gs.textstylecomp;
+    position: relative;
+    text-align: center;   
+}

@@ -1,0 +1,13 @@
+//colors
+$green-color: #026f35;
+$font: "Roboto";
+
+//mixins
+@mixin fontstyles($font:"Roboto", $font-size:12%) {
+    font-family: $font;
+    font-size: $font-size;
+}
+@mixin textstylecomp {
+    color: #fff;
+    font: $font;
+}

@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'open sans';
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #097905;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 1000px;
+    background: #DCE35B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, hsl(122, 45%, 49%), hsla(63, 71%, 62%, 0.814));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsla(122, 45%, 49%, 0.614), hsla(63, 67%, 60%, 0.615)), url(https://orientacion.universia.net.co/imgs2011/imagenes/uco-2015_02_26_142624.jpg);
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+     margin-right: 10px;
+
+}
+
+nav > a:hover{
+    
+    text-decoration: underline;
+
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About us */
+
+contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background-color: #097905;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    box-shadow: 0 0 6px 0;
+    margin-right: 5px;
+    
+}
+.contenido-textos p{
+    padding: 0 0px 30px 15px ;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*  our team  */
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+    width: 100%;
+    
+}
+
+.servicio-cont{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    
+}
+
+.servicio-ind {
+    width: 25%;
+    text-align: center;
+
+}
+
+.servicio-ind img{
+    width: 90%;
+
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 20px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.content-foo{
+    text-align: center;
+    
+}
+
+.content-foo{
+    color: #fff;
+    border-color: 3px solid #077905;
+    padding: 5px;
+    margin: 10px;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+}

@@ -1,17 +1,19 @@
-<ul class="menu-style">
-   <li routerLinkActive="active">
-      <a class="options-style" routerLink="['home']">Inicio</a>
-   </li>
-   <li routerLinkActive="active">
-      <a class="options-style" routerLink="['us']">Nosotros</a>
-   </li>
-   <li routerLinkActive="active">
-      <a class="options-style" routerLink="['card']">Tarjeta</a>
-   </li>
-   <li routerLinkActive="active">
-      <a class="options-style" routerLink="['stores']">Tiendas</a>
-   </li>
-   <li routerLinkActive="active">
-      <a class="options-style" style="margin-left: 40%" routerLink="['login']">Iniciar sesión</a>
-   </li>
-</ul>
+<div *ngIf="stateHeader">
+   <ul class="menu-style">
+      <li class="nav-item" routerLinkActive="active">
+         <a class="options-style" [routerLink]="['home']">Inicio</a>
+      </li>
+      <li routerLinkActive="active">
+         <a class="options-style" [routerLink]="['us']">Nosotros</a>
+      </li>
+      <li routerLinkActive="active">
+         <a class="options-style" [routerLink]="['card']">Tarjeta</a>
+      </li>
+      <li routerLinkActive="active">
+         <a class="options-style" [routerLink]="['stores']">Tiendas</a>
+      </li>
+      <li routerLinkActive="active">
+         <a class="options-style" style="margin-left: 40%" [routerLink]="['login']" (click)="hideHeader()">Iniciar sesión</a>
+      </li>
+   </ul>
+</div>

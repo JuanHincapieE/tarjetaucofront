@@ -12,9 +12,10 @@ import { StoresComponent } from './pages/stores/stores.component';
 import { UsComponent } from './pages/us/us.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CardComponent } from './pages/card/card.component';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
+  
   declarations: [
     AppComponent,
     HeaderComponent,
@@ -29,7 +30,12 @@ import { CardComponent } from './pages/card/card.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+   
+    FormsModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

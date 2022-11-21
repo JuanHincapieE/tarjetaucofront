@@ -6,10 +6,14 @@ import { Observable } from "rxjs";
     providedIn: "root"
   })
 
-  export class UsersService {
+  export class UserService {
     constructor(private http: HttpClient) {}
   
-    login(user: any): Observable<any> {
-      return this.http.post("", user);
+    register(user: any): Observable<any> {
+      return this.http.post("http://localhost:8080/api/v1/rest/register", user);
     }
+
+    login(user: any): Observable<any> {
+        return this.http.post("http://localhost:8080/api/authenticate", user);
+      }
   }

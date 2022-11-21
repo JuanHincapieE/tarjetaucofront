@@ -12,7 +12,7 @@ import { StoresComponent } from './pages/stores/stores.component';
 import { UsComponent } from './pages/us/us.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CardComponent } from './pages/card/card.component';
-import {HttpClientModule} from '@angular/common/http'
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 
 @NgModule({
@@ -20,17 +20,19 @@ import {HttpClientModule} from '@angular/common/http'
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent,
+    HomeComponent,    
     LoginComponent,
     RegisterComponent,
     StoresComponent,
     UsComponent,
-    CardComponent,   
+    CardComponent  
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

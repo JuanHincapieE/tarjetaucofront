@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {UserService} from '../../service/users.service'
 
 @Component({
   selector: 'app-register',
@@ -10,11 +11,12 @@ export class RegisterComponent {
   email!: string;
   password!: string;
   confirmPassword!: string;
+  
+
   constructor() { }
 
   register() {
-    console.log(this.email);
-    console.log(this.password);
+   
   }
 
 }

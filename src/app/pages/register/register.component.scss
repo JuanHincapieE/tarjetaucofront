@@ -1,0 +1,10 @@
+@use '../../../style/global-style' as gs;
+.custom-form {
+  @include gs.formstandarlogin;
+}
+.custom-form input {
+  @include gs.formstandarlogininput;
+}
+.custom-form button {
+@include gs.formstandarloginnutton;
+}

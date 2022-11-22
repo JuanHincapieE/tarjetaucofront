@@ -1,12 +1,11 @@
 <div>
-
     <body>
         <header>
             <nav>
                 <a href="#">Inicio</a>
                 <a href="#">Acerca de</a>
-                <a href="#">servicios</a>
-                <a href="#">contacto</a>
+                <a href="#">Servicios</a>
+                <a [routerLink]="['login']" *ngIf="stateLogin" (click) = "sessionOff()">Cerrar sesión</a>
             </nav>
             <section class="textos-header">
                 <h1>SOMOS TARJETA UCO</h1>
@@ -25,10 +24,10 @@
                     <img src="https://github.com/julido123/TarjetaUCOIngSoft1/blob/master/img/img6.jpg?raw=true" alt="" class="imagen-about-us">
                     <div class="contenido-textos">
                         <h3><span>1</span>TRAJETA UCO</h3>
-                        <p>Nuestra TarjetaUCO, trae a la universidad una solucion viable y a su vez faborable a la hora de cancelar tus productos en la institucion,
-                            haciendo que nuestro producto se posicione como uno de los mas deseados por motivos de ajilidad y fluides a la hora de comprar en cafeterias, papelerias
+                        <p> TarjetaUCO brinda a la universidad una solucion viable y a su vez favorable a la hora de realizar los pagos de productos en las tiendas o locales que prestan servicio en la institucion,
+                            aumentando la velocidad y agilidad a la hora de comprar en cafeterias, papelerias
                             y de mas lugares que tendran este servicio.
-                            nuestros objetivos son muy claros y queremos que todos puedan gozar de este producto y a su vez hacer un poco mas facil las transiciones en la UCO
+                            nuestros objetivos son muy claros y queremos que todos puedan gozar de este producto y a su vez hacer más sencillas las transacciones en la UCO
                         </p>
                     </div>
                     

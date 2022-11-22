@@ -1,3 +1,4 @@
+@use '../../../style/global-style' as gs;
 *{
     margin:0;
     padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body{
-    font-family: 'open sans';
+    font-family: gs.$font;
 }
 
 .contenedor{
@@ -17,7 +18,7 @@ body{
 }
 
 .titulo{
-    color: #097905;
+    color: gs.$green-color;
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
@@ -29,11 +30,11 @@ header{
     width: 100%;
     height: 1000px;
     background: #DCE35B;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, hsl(122, 45%, 49%), hsla(63, 71%, 62%, 0.814));  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, hsla(122, 45%, 49%, 0.614), hsla(63, 67%, 60%, 0.615)), url(https://orientacion.universia.net.co/imgs2011/imagenes/uco-2015_02_26_142624.jpg);
-background-size: cover;
-background-attachment: fixed;
-position: relative;
+    background: -webkit-linear-gradient(to right, hsl(122, 45%, 49%), hsla(63, 71%, 62%, 0.814));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(122, 45%, 49%, 0.614), hsla(63, 67%, 60%, 0.615)), url(https://orientacion.universia.net.co/imgs2011/imagenes/uco-2015_02_26_142624.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
 }
 
 nav{
@@ -86,7 +87,7 @@ header .textos-header{
 
 /* About us */
 
-contenedor-sobre-nosotros {
+.contenedor-sobre-nosotros {
     display: flex;
     justify-content: space-evenly;
 }
@@ -189,6 +190,7 @@ footer{
 }
 
 .titulo-final{
+    color:#fff;
     text-align: center;
     font-size: 24px;
     margin: 20px 0 0 0;

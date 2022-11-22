@@ -1,3 +1,4 @@
+import { Token } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,14 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  stateHeader: boolean = true;
+  stateHeader!: boolean;
 
   constructor() { }
 
   ngOnInit(): void {
+    if(localStorage.getItem('token') == null) {
+      this.stateHeader = true;
+    } else {
+      this.stateHeader = false;
+    }
   }
 
-  hideHeader() {
-    this.stateHeader = !this.stateHeader;
+  hideButton() {
+    return this.stateHeader;
+  }
+  sessionOn() {
+    if(localStorage.getItem('token') != null ) {
+      this.stateHeader = false;
+      return true;
+    }    
+    return false;
   }
 }

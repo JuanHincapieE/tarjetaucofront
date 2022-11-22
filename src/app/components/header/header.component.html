@@ -1,4 +1,4 @@
-<div *ngIf="stateHeader">
+<div>
    <ul class="menu-style">
       <li class="nav-item" routerLinkActive="active">
          <a class="options-style" [routerLink]="['home']">Inicio</a>
@@ -13,7 +13,7 @@
          <a class="options-style" [routerLink]="['stores']">Tiendas</a>
       </li>
       <li routerLinkActive="active">
-         <a class="options-style" style="margin-left: 40%" [routerLink]="['login']" (click)="hideHeader()">Iniciar sesión</a>
+         <a class="options-style" style="margin-left: 40%" *ngIf="hideButton()" [routerLink]="['login']">Iniciar sesión</a>
       </li>
    </ul>
 </div>

@@ -7,10 +7,11 @@ import { NavigationStart, Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
   title = 'tarjeta-uco';
   showHeader: boolean = true;
 
-  ngOnInit() {
+  ngOnInit() { 
   }
 
 }
